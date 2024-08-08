@@ -18,11 +18,6 @@ const Projects = () => (
       <p>Project description.</p>
       <a href="https://monwabisindlovu.github.io/portfolio-landing_page/">View Project</a>
     </div>
-    <div className="project">
-      <h3>Project Name</h3>
-      <p>Project description.</p>
-      <a href="#">View Project</a>
-    </div>
   </section>
 );
 
