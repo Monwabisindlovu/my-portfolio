@@ -10,8 +10,9 @@ const Projects = () => (
     </div>
     <div className="project">
       <h3>FindME-livemarketplace</h3>
-      <p>A real-time local services marketplace.</p>
-      <a href="https://github.com/Monwabisindlovu/FindME-livemarketplace">View Project</a>
+      <p>invoisseur-free-invoice-make.</p>
+      <a href="https://www.invoisseur-free-invoice-maker.com/">View Project</a>
+      <a href="https://github.com/dsampson94/invoisseur-next.com/">View Project</a>
     </div>
     <div className="project">
       <h3>portfolio-landing_page</h3>
