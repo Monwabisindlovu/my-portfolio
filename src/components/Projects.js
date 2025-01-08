@@ -9,15 +9,14 @@ const Projects = () => (
       <a href="https://github.com/legennd48/JournalHub">View Project</a>
     </div>
     <div className="project">
-      <h3>FindME-livemarketplace</h3>
-      <p>invoisseur-free-invoice-make.</p>
+      <h3>Invoisseur</h3>
+      <p>A free online invoice maker to streamline invoicing.</p>
       <a href="https://www.invoisseur-free-invoice-maker.com/">View Project</a>
-      <a href="https://github.com/dsampson94/invoisseur-next.com/">View Project</a>
     </div>
     <div className="project">
-      <h3>portfolio-landing_page</h3>
-      <p>Project description.</p>
-      <a href="https://monwabisindlovu.github.io/portfolio-landing_page/">View Project</a>
+      <h3>Church Website</h3> {/* New Project Title */}
+      <p>A website for Mzilikazi Barbourfields Church of the Nazarene.</p> {/* Description */}
+      <a href="https://mzilikazi-barbourfields-church-of-the-nazaren.vercel.app/">View Project</a> {/* Link */}
     </div>
   </section>
 );
