@@ -1,9 +1,16 @@
+// src/components/Header.js
 import React from 'react';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'; // Importing icons
+import '../styles.css'; // Assuming styles are in a separate CSS file
 
 const Header = () => (
-  <header>
-    <h1>Monwabisi Ndlovu</h1>
-    <p>Johannesburg, South Africa · +27849621939 · monwabisindlovu78@gmail.com</p>
+  <header className="header-container">
+    <h1 className="header-name">Monwabisi Ndlovu</h1>
+    <p className="header-contact">
+      <FaMapMarkerAlt className="header-icon" /> Johannesburg, South Africa &nbsp;|&nbsp;
+      <FaPhoneAlt className="header-icon" /> +27849621939 &nbsp;|&nbsp;
+      <FaEnvelope className="header-icon" /> monwabisindlovu78@gmail.com
+    </p>
   </header>
 );
 

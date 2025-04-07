@@ -29,7 +29,7 @@ header p {
 }
 
 nav {
-  background-color: #007bff;
+  background-color: #6f42c1; 
 }
 
 nav ul {
@@ -67,7 +67,7 @@ main {
   height: 120px;
   display: block;
   margin: 20px auto;
-  border: 4px solid #007bff;
+  border-top: 2px solid #111;
 }
 
 section {
@@ -82,55 +82,144 @@ section h2 {
   margin-bottom: 10px;
 }
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+#skills {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
 }
 
-.skill {
-  display: flex;
-  flex-direction: column;
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Skills container grid */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Makes the grid responsive */
+  gap: 20px; /* Adds space between each skill item */
+  justify-items: center;
   align-items: center;
-  margin: 15px;
+  margin-top: 20px;
+}
+
+/* Style for each skill item */
+.skill {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-10px); /* Adds a hover effect */
 }
 
 .skill img {
-  width: 60px;
+  width: 60px; /* Set a fixed size for images */
   height: 60px;
-  margin-bottom: 5px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Projects */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .project {
   background-color: #fff;
-  padding: 15px;
-  margin: 10px 0;
+  padding: 20px;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
-  margin: 0;
+  margin-top: 0;
+  color: #292b2c;
+  font-size: 1.3em;
 }
 
-.social-links {
-  text-align: center;
+.project-links {
   margin-top: 10px;
 }
 
-.social-links a {
-  margin: 0 10px;
-  text-decoration: none;
+.project-links a {
   color: #007bff;
+  text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+.project-links a:hover {
+  color: #0056b3;
+}
+
+/* Individual Project Backgrounds */
+.project-journalhub {
+  background-color: #e6f2ff; /* calm blue */
+  border: 1px solid #cce6ff;
+}
+
+.project-invoisseur {
+  background-color: #fff8e1; /* soft yellow */
+  border: 1px solid #f2e5b9;
+}
+
+.project-churchsite {
+  background-color: #f4f0fa; /* light lavender */
+  border: 1px solid #dcd2f2;
+}
+
+.project-ezyinvoice {
+  background-color: #f9f6ec; /* soft beige */
+  border: 1px solid #eee2c5;
+}
+
+
+/* Social Icons */
+.icon-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.icon-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.icon-links a:hover {
+  color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 1em 0;
@@ -138,18 +227,358 @@ footer {
   color: #fff;
 }
 
+/* CV & Cover Letter */
 #cv, #cover-letter {
   margin: 20px 0;
   text-align: center;
 }
 
-#cv h2, #cover-letter h2 {
-  color: #007bff;
-  font-size: 1.5em;
+/* CV Section */
+#cv {
+  padding: 40px 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-#cv a, #cover-letter a {
-  text-decoration: none;
-  color: #007bff;
+.cv-header {
+  color: #007bff; /* Blue for CV header */
+  font-size: 1.5em;
   font-weight: bold;
+}
+
+.cv-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cv-icon {
+  color: #007bff; /* Blue for CV icon */
+  font-size: 3rem;
+}
+
+.cv-title {
+  color: #007bff; /* Blue for CV title */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cv-description {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.cv-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.cv-btn:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+}
+
+/* Cover Letter Section */
+.cover-letter-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cover-letter-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cover-letter-icon {
+  color: #9b59b6; /* Purple for Cover Letter icon */
+  font-size: 3rem;
+}
+
+.cover-letter-title {
+  color: #9b59b6; /* Purple for Cover Letter title */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cover-letter-description {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.cover-letter-btn {
+  background-color: #9b59b6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.cover-letter-btn:hover {
+  background-color: #8e44ad; /* Darker purple for hover */
+}
+
+
+/* Interests Section */
+#interests {
+  margin: 40px 0;
+  padding: 40px 0;
+}
+
+#interests h2 {
+  font-size: 1.5em; /* match other sections */
+  font-weight: bold;
+  color: #007bff; /* same as Projects/Skills */
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+#interests p {
+  color: #666;
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.interests-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+}
+
+.interest-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.interest-card i {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.interest-code i,
+.interest-code h3 {
+  color: #007bff; /* blue */
+}
+
+.interest-podcast i,
+.interest-podcast h3 {
+  color: #9b59b6; /* purple */
+}
+
+.interest-fitness i,
+.interest-fitness h3 {
+  color: #2ecc71; /* green */
+}
+
+.interest-card p {
+  color: #555;
+  font-size: 0.95em;
+}
+/* Education Section */
+#education {
+  padding: 40px 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+#education h2 {
+  color: #007bff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.education-item {
+  margin-bottom: 40px;
+}
+
+.education-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.education-item p {
+  color: #6c757d;
+}
+
+.education-item .text-sm {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/* ALX-specific styles */
+.education-item:first-of-type h3,
+.education-item:first-of-type svg {
+  color: #007bff;
+}
+
+/* High School-specific styles */
+.education-item:last-of-type h3,
+.education-item:last-of-type svg {
+  color: #9b59b6;
+}
+/* About Section */
+#about {
+  background-color: #f8fafc; /* Light background */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  color: #007bff; /* Blue for the title */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+#about p {
+  color: #4a5568; /* Soft gray for paragraph */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#about span {
+  color: #007bff;
+}
+
+/* Icon Section */
+#about .text-center {
+  text-align: center;
+}
+
+#about .text-center p {
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+#about .flex div {
+  width: 33%;
+}
+
+/* Icon Color Classes */
+.coding-icon {
+  color: #1e40af; /* Blue for Software Engineering */
+}
+
+.backend-icon {
+  color: #16a34a; /* Green for Backend Development */
+}
+
+.frontend-icon {
+  color: #06b6d4; /* Cyan for Frontend Development */
+}
+/* Profile Section */
+#profile {
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-top: 2px solid #111;
+  margin-bottom: 20px;
+}
+
+.profile-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.profile-info {
+  font-size: 1.1rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between items */
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.profile-info .profile-icon {
+  color: #007bff;
+  vertical-align: middle;
+}
+/* Footer */
+footer {
+  background-color: #292b2c;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9em;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.nav-links a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }

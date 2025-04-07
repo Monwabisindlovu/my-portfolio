@@ -22,8 +22,8 @@ const App = () => (
       <About />
       <Education />
       <Skills />
-      <Interests />
       <Projects />
+      <Interests />
       <CV /> {/* CV component moved here under Projects */}
       <SocialLinks />
     </main>

@@ -1,10 +1,38 @@
 import React from 'react';
+import { FaCode, FaDumbbell, FaPodcast } from 'react-icons/fa';
 
 const Interests = () => (
   <section id="interests">
-    <h2>Interests</h2>
-    <p>Apart from being a Software Engineer, I am an indoor person who enjoys reading wonderful stories, playing chess, and gaming. I also have a passion for gardening. While I prefer staying indoors, I do enjoy going outdoors to meet with friends or attend social events, which isn't often.</p>
-    <p>When spending time indoors, I follow a number of intriguing stories and engage in gaming. Additionally, I enjoy exploring the latest technology advancements in the front-end web development world.</p>
+    <div className="text-center">
+      <h2>Interests</h2>
+      <p>What fuels my creativity and keeps me in sync with tech and well-being.</p>
+
+      <div className="interests-grid">
+        <div className="interest-card interest-code">
+          <FaCode className="icon" />
+          <h3>Frontend Exploration</h3>
+          <p>
+            Constantly experimenting with modern UI/UX and frontend frameworks to craft better user experiences.
+          </p>
+        </div>
+
+        <div className="interest-card interest-podcast">
+          <FaPodcast className="icon" />
+          <h3>Tech Podcasts & Blogs</h3>
+          <p>
+            Staying updated with industry trends, dev stories, and deep tech insights through podcasts and blogs.
+          </p>
+        </div>
+
+        <div className="interest-card interest-fitness">
+          <FaDumbbell className="icon" />
+          <h3>Gym & Fitness</h3>
+          <p>
+            Keeping both mind and body sharp — weightlifting helps me stay focused, healthy, and energized.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 );
 
