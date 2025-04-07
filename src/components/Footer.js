@@ -30,7 +30,7 @@ const Footer = () => (
 
       {/* Copyright Notice */}
       <div className="copyright">
-        <p>&copy; 2025 Monwabisi Ndlovu. All Rights Reserved.</p>
+        <p>&copy; 2024 Monwabisi Ndlovu. All Rights Reserved.</p>
       </div>
 
       {/* Navigation Links (Optional) */}
