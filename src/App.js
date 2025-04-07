@@ -20,9 +20,9 @@ const App = () => (
     <main>
       <Profile /> {/* Profile with the photo */}
       <About />
-      <Education />
       <Skills />
       <Projects />
+      <Education />
       <Interests />
       <CV /> {/* CV component moved here under Projects */}
       <SocialLinks />
