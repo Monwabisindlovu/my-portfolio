@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'EzyInvoice',
     description: 'A modern invoicing solution built for freelancers and small businesses.',
-    link: 'https://vercel.com/monwabisindlovus-projects/ezyinvoice01',
+    link: 'https://ezyinvoice01.vercel.app/',
     repo: 'https://github.com/Monwabisindlovu/ezyinvoice01',
     className: 'project-ezyinvoice',
   },
