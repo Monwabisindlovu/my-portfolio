@@ -11,10 +11,6 @@ const Skills = () => (
         <p>Node.js</p>
       </div>
       <div className="skill">
-        <img src="https://github.com/Monwabisindlovu/portfolio-landing_page/blob/main/images/flask.jpeg?raw=true" alt="Flask" />
-        <p>Flask</p>
-      </div>
-      <div className="skill">
         <img src="https://github.com/Monwabisindlovu/portfolio-landing_page/blob/main/images/python.jpeg?raw=true" alt="Python" />
         <p>Python</p>
       </div>
@@ -25,14 +21,6 @@ const Skills = () => (
       <div className="skill">
         <img src="https://github.com/Monwabisindlovu/portfolio-landing_page/blob/main/images/javascript.jpeg?raw=true" alt="JavaScript" />
         <p>JavaScript</p>
-      </div>
-      <div className="skill">
-        <img src="https://github.com/Monwabisindlovu/portfolio-landing_page/blob/main/images/expressjs.jpeg?raw=true" alt="Express.js" />
-        <p>Express.js</p>
-      </div>
-      <div className="skill">
-        <img src="https://github.com/Monwabisindlovu/portfolio-landing_page/blob/main/images/mangodb.jpeg?raw=true" alt="MongoDB" />
-        <p>MongoDB</p>
       </div>
       {/* New skill category: Front-End Development */}
       <div className="skill">
