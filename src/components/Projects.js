@@ -14,12 +14,6 @@ const projects = [
     className: 'project-invoisseur',
   },
   {
-    title: 'Church Website',
-    description: 'A website for Mzilikazi Barbourfields Church of the Nazarene.',
-    link: 'https://mzilikazi-barbourfields-church-of-the-nazaren.vercel.app/',
-    className: 'project-churchsite',
-  },
-  {
     title: 'EzyInvoice',
     description: 'A modern invoicing solution built for freelancers and small businesses.',
     link: 'https://vercel.com/monwabisindlovus-projects/ezyinvoice01',

@@ -1,18 +1,18 @@
 import React from 'react';
-import { FaCode, FaDumbbell, FaPodcast } from 'react-icons/fa';
+import { FaCode, FaPodcast } from 'react-icons/fa';
 
 const Interests = () => (
   <section id="interests">
     <div className="text-center">
       <h2>Interests</h2>
-      <p>What fuels my creativity and keeps me in sync with tech and well-being.</p>
+      <p>Fueling creativity through continuous learning and frontend innovation.</p>
 
       <div className="interests-grid">
         <div className="interest-card interest-code">
           <FaCode className="icon" />
           <h3>Frontend Exploration</h3>
           <p>
-            Constantly experimenting with modern UI/UX and frontend frameworks to craft better user experiences.
+            Passionate about modern UI/UX, responsive design, and frontend frameworks for seamless user experiences.
           </p>
         </div>
 
@@ -20,15 +20,7 @@ const Interests = () => (
           <FaPodcast className="icon" />
           <h3>Tech Podcasts & Blogs</h3>
           <p>
-            Staying updated with industry trends, dev stories, and deep tech insights through podcasts and blogs.
-          </p>
-        </div>
-
-        <div className="interest-card interest-fitness">
-          <FaDumbbell className="icon" />
-          <h3>Gym & Fitness</h3>
-          <p>
-            Keeping both mind and body sharp — weightlifting helps me stay focused, healthy, and energized.
+            Staying current with tech trends, engineering insights, and developer journeys through curated content.
           </p>
         </div>
       </div>
