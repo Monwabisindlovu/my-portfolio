@@ -164,7 +164,6 @@ main {
   }
 }
 
-
 #skills {
   padding: 40px 20px;
   background-color: #f4f4f4;
@@ -176,14 +175,21 @@ main {
   margin-bottom: 20px;
 }
 
-/* Skills container grid */
+/* Default grid: works great on big screens */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Makes the grid responsive */
-  gap: 20px; /* Adds space between each skill item */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  gap: 20px;
   justify-items: center;
   align-items: center;
   margin-top: 20px;
+}
+
+/* On small screens, limit to exactly 2 columns */
+@media (max-width: 767px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Style for each skill item */
@@ -196,11 +202,11 @@ main {
 }
 
 .skill:hover {
-  transform: translateY(-10px); /* Adds a hover effect */
+  transform: translateY(-10px);
 }
 
 .skill img {
-  width: 60px; /* Set a fixed size for images */
+  width: 60px;
   height: 60px;
   object-fit: cover;
   margin-bottom: 10px;
@@ -212,6 +218,8 @@ main {
   color: #333;
   margin-top: 10px;
 }
+
+
 
 /* Projects */
 .projects-container {
