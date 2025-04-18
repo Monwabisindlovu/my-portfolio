@@ -15,7 +15,6 @@ const Education = () => (
           <p className="description">
             Completed an intensive program in software engineering, gaining hands-on experience in programming languages, development frameworks, data structures, and algorithms.
           </p>
-          <p className="text-sm">May 2023 - July 2024</p>
         </div>
 
         {/* High School Certificate */}
