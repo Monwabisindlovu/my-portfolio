@@ -2,7 +2,6 @@
 import React from 'react';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import Profile from './components/Profile';
 import About from './components/About';
 import Education from './components/Education';
 import Skills from './components/Skills';
@@ -11,6 +10,7 @@ import Projects from './components/Projects';
 import CV from './components/CV';
 import SocialLinks from './components/SocialLinks';
 import Footer from './components/Footer';
+import Hero from './components/Hero'
 import './styles.css';
 
 const App = () => (
@@ -18,7 +18,7 @@ const App = () => (
     <Header />
     <Navbar />
     <main>
-      <Profile /> {/* Profile with the photo */}
+    <Hero />
       <About />
       <Skills />
       <Projects />
