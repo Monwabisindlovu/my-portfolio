@@ -63,11 +63,7 @@ header {
 
 
 nav {
-<<<<<<< HEAD
-  background-color: #007bff;;
-=======
-  background-color:  #007bff;
->>>>>>> cc7b2614e2c36d1b007cb1f64650293c70f9af7b
+  background-color: #6f42c1; 
 }
 
 nav ul {
@@ -111,60 +107,6 @@ main {
   padding: 20px;
   max-width: 1200px;
   margin: auto;
-}
-.profile-img {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  display: block;
-  margin: 20px auto;
-  border-top: 2px solid #111;
-}
-
-.profile-title {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 10px 0;
-}
-
-.profile-info {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  text-align: center;
-  font-size: 1rem;
-  color: #333;
-  margin-top: 10px;
-}
-
-.profile-info span {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .profile-info {
-    font-size: 0.95rem;
-    gap: 10px;
-  }
-
-  .profile-title {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-info {
-    font-size: 0.85rem;
-    gap: 8px;
-  }
-
-  .profile-title {
-    font-size: 1.1rem;
-  }
 }
 
 #skills {
@@ -591,48 +533,11 @@ footer {
 .education-item:last-of-type h3 {
   color: #9b59b6;
 }
-
-/* Media queries for text scaling */
-@media (max-width: 768px) {
-  #education h2 {
-    font-size: 1.6rem;
-  }
-
-  .education-item h3 {
-    font-size: 1.3rem;
-  }
-
-  .education-item .subheading {
-    font-size: 1rem;
-  }
-
-  .education-item .description {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #education h2 {
-    font-size: 1.4rem;
-  }
-
-  .education-item h3 {
-    font-size: 1.15rem;
-  }
-
-  .education-item .description {
-    font-size: 0.85rem;
-  }
-<<<<<<< HEAD
-}
-
 /* About Section */
 #about {
   background-color: #f8fafc; /* Light background */
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-=======
->>>>>>> cc7b2614e2c36d1b007cb1f64650293c70f9af7b
 }
 
 #about h2 {
@@ -678,44 +583,7 @@ footer {
 .frontend-icon {
   color: #06b6d4; /* Cyan for Frontend Development */
 }
-/* Profile Section */
-#profile {
-  padding: 40px 20px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
 
-.profile-img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-top: 2px solid #111;
-  margin-bottom: 20px;
-}
-
-.profile-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #007bff;
-  margin-bottom: 15px;
-}
-
-.profile-info {
-  font-size: 1.1rem;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Space between items */
-  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
-}
-
-.profile-info .profile-icon {
-  color: #007bff;
-  vertical-align: middle;
-}
 /* Footer */
 footer {
   background-color: #292b2c;
