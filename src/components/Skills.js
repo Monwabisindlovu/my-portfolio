@@ -22,7 +22,11 @@ const Skills = () => (
         <img src="https://github.com/Monwabisindlovu/portfolio-landing_page/blob/main/images/javascript.jpeg?raw=true" alt="JavaScript" />
         <p>JavaScript</p>
       </div>
+<<<<<<< HEAD
       {/* Front-End Development */}
+=======
+      {/* New skill category: Front-End Development */}
+>>>>>>> cc7b2614e2c36d1b007cb1f64650293c70f9af7b
       <div className="skill">
         <img src="https://github.com/Monwabisindlovu/portfolio-landing_page/blob/main/images/html-icon.jpg?raw=true" alt="HTML & CSS" />
         <p>HTML & CSS</p>
