@@ -2,28 +2,28 @@
 .projects-section {
   padding: 80px 20px;
   background-color: #242424; /* Dark background for the entire section */
-  color: white;              /* Default text color */
-  text-align: center;
+  color: white;
+  text-align: left;
+  margin: 0; /* Remove all margins from the section */
+  width: 100%; /* Make sure the section takes full width */
+  box-sizing: border-box; /* Ensure padding is part of width */
 }
 
-.projects-title {
-  font-size: 2.2rem;
-  margin-bottom: 40px;
-  text-align: left !important;
-}
-
+/* Grid Layout */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%; /* Ensure grid takes the full width */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding */
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
-/* Project Cards */
+/* Project Card */
 .project-card {
-  background-color: #333333; /* Dark gray background for all project cards */
-  color: white;              /* Text color inside the cards */
+  background-color: #333333;
+  color: white;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -36,34 +36,26 @@
   transform: translateY(-5px);
 }
 
-.project-image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
+/* Content */
 .project-content {
   padding: 16px;
 }
 
-/* Title */
 .project-title {
   font-size: 1.4rem;
-  margin: 0 0 8px;
-  color: white; /* White color for the title */
+  margin-bottom: 8px;
+  color: white;
 }
 
-/* Description */
 .project-description {
   font-size: 1rem;
-  color: white; /* Change description color to white */
+  color: yellow;
   margin-bottom: 12px;
 }
 
-/* Tech Stack */
 .project-tech {
   font-size: 0.9rem;
-  color: #999; /* Light gray for tech stack text */
+  color: #999;
   font-style: italic;
   margin-bottom: 12px;
 }
@@ -72,7 +64,7 @@
 .project-links a {
   display: inline-block;
   margin-right: 12px;
-  color: #007bff; /* Blue links */
+  color: #007bff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -81,51 +73,12 @@
   text-decoration: underline;
 }
 
-/* Individual Project Backgrounds (optional) */
-.project-journalhub {
-  background-color: #393a3f; /* calm blue */
-  border: 1px solid #393a3f;
-}
-
-.project-invoisseur {
-  background-color: #393a3f; /* soft yellow */
-  border: 1px solid #393a3f;
-}
-
+/* Optional Background Customizations */
+.project-journalhub,
+.project-invoisseur,
+.project-ezyinvoice,
+.project-meticulous,
 .project-churchsite {
-  background-color: #393a3f; /* light lavender */
+  background-color: #393a3f;
   border: 1px solid #393a3f;
-}
-
-.project-ezyinvoice {
-  background-color: #393a3f; /* soft beige */
-  border: 1px solid #393a3f;
-}
-
-.project-meticulous {
-  background-color: #393a3f; /* soft beige */
-  border: 1px solid #393a3f;
-}
-
-/* Image styling */
-.project img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-  max-height: 250px;
-}
-
-@media (max-width: 768px) {
-  .project img {
-    max-height: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .project img {
-    max-height: 160px;
-  }
 }

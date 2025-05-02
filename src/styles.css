@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333ay;
-  background-color: light gray;
+  background-color: #1C1C1C;
 }
 
 /* Header Base Styles */
@@ -37,6 +37,11 @@ header {
   margin-right: 5px;
 }
 
+/* Style for clickable phone number and email */
+.header-contact a {
+  color: red; /* Red color for phone number and email */
+}
+
 /* Tablet Screens */
 @media (max-width: 768px) {
   .header-name {
@@ -61,9 +66,8 @@ header {
   }
 }
 
-
 nav {
-  background-color: #6f42c1; 
+  background-color: black; 
 }
 
 nav ul {
@@ -80,7 +84,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: gold;
   font-weight: bold;
   font-size: 1.1em;
 }
@@ -108,127 +112,6 @@ main {
   max-width: 1200px;
   margin: auto;
 }
-
-#skills {
-  padding: 40px 20px;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-#skills h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-/* Default grid: works great on big screens */
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-/* On small screens, limit to exactly 2 columns */
-@media (max-width: 767px) {
-  .skills-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Style for each skill item */
-.skill {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.skill:hover {
-  transform: translateY(-10px);
-}
-
-.skill img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.skill p {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-  margin-top: 10px;
-}
-
-
-
-/* Projects */
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.project {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-  margin-top: 0;
-  color: #292b2c;
-  font-size: 1.3em;
-}
-
-.project-links {
-  margin-top: 10px;
-}
-
-.project-links a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.project-links a:hover {
-  color: #0056b3;
-}
-
-/* Individual Project Backgrounds */
-.project-journalhub {
-  background-color: #e6f2ff; /* calm blue */
-  border: 1px solid #cce6ff;
-}
-
-.project-invoisseur {
-  background-color: #fff8e1; /* soft yellow */
-  border: 1px solid #f2e5b9;
-}
-
-.project-churchsite {
-  background-color: #f4f0fa; /* light lavender */
-  border: 1px solid #dcd2f2;
-}
-
-.project-ezyinvoice {
-  background-color: #f9f6ec; /* soft beige */
-  border: 1px solid #eee2c5;
-}
-
 
 /* Social Icons */
 .icon-links {
@@ -262,56 +145,62 @@ footer {
   background-color: #292b2c;
   color: #fff;
 }
-
-/* CV & Cover Letter */
-#cv, #cover-letter {
-  margin: 20px 0;
+/* CV & Cover Letter Shared Styles */
+#cv {
   text-align: center;
 }
 
-/* CV Section */
-#cv {
-  padding: 40px 0;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
 .cv-header {
-  color: #007bff; /* Blue for CV header */
-  font-size: 1.5em;
+  color: #007bff;
+  font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.cv-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+.cv-card, .cover-letter-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.cv-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+.cv-icon, .cover-letter-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .cv-icon {
-  color: #007bff; /* Blue for CV icon */
-  font-size: 3rem;
+  color: #007bff;
 }
 
-.cv-title {
-  color: #007bff; /* Blue for CV title */
+.cover-letter-icon {
+  color: #9b59b6;
+}
+
+.cv-title, .cover-letter-title {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.cv-description {
-  color: #6c757d;
-  font-size: 1rem;
+.cv-title {
+  color: #007bff;
 }
 
-.cv-btn {
+.cover-letter-title {
+  color: #9b59b6;
+}
+
+.cv-description, .cover-letter-description {
+  color: #6c757d;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.cv-btn, .cover-letter-btn {
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
@@ -321,157 +210,41 @@ footer {
   font-weight: bold;
   border: none;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
 }
 
 .cv-btn:hover {
-  background-color: #0056b3; /* Darker blue for hover */
-}
-
-/* Cover Letter Section */
-.cover-letter-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cover-letter-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.cover-letter-icon {
-  color: #9b59b6; /* Purple for Cover Letter icon */
-  font-size: 3rem;
-}
-
-.cover-letter-title {
-  color: #9b59b6; /* Purple for Cover Letter title */
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.cover-letter-description {
-  color: #6c757d;
-  font-size: 1rem;
+  background-color: #0056b3;
 }
 
 .cover-letter-btn {
   background-color: #9b59b6;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  margin-top: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
 }
 
 .cover-letter-btn:hover {
-  background-color: #8e44ad; /* Darker purple for hover */
+  background-color: #8e44ad;
 }
 
-
-/* Interests Section */
-#interests {
-  margin: 40px 0;
-  padding: 40px 0;
-}
-
-#interests h2 {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #007bff;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 10px;
-}
-
-#interests p {
-  color: #555;
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-  text-align: center;
-}
-
-.interests-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.interest-card {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.interest-card .icon {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.interest-code .icon,
-.interest-code h3 {
-  color: #007bff;
-}
-
-.interest-podcast .icon,
-.interest-podcast h3 {
-  color: #9b59b6;
-}
-
-.interest-card p {
-  font-size: 0.95em;
-  color: #555;
-}
-
-/* Media queries for responsive font sizes */
-@media (max-width: 768px) {
-  #interests h2 {
-    font-size: 1.5em;
-  }
-
-  #interests p,
-  .interest-card p {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  #interests h2 {
-    font-size: 1.3em;
-  }
-
-  #interests p,
-  .interest-card p {
-    font-size: 0.95em;
-  }
-}
 
 /* Education Section */
 #education {
   padding: 40px 0;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  background-color: #fff;
+  background-color: #242424;
 }
 
+/* Education header - Align left */
 #education h2 {
-  color: #007bff;
+  color: white;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 40px;
-  text-align: center;
+  text-align: left; /* Align header to the left */
 }
 
 /* Grid layout for education cards */
@@ -482,8 +255,9 @@ footer {
   margin: 0 auto;
 }
 
+/* Education Item styling - Gray background */
 .education-item {
-  background: #f9f9f9;
+  background: #2c3338; /* Gray background */
   border-radius: 10px;
   padding: 20px 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
@@ -508,19 +282,19 @@ footer {
 
 .education-item .subheading {
   font-size: 1.1rem;
-  color: #555;
+  color: white;
   margin-bottom: 10px;
 }
 
 .education-item .description {
   font-size: 0.95rem;
-  color: #6c757d;
+  color: yellow;
   margin-bottom: 10px;
 }
 
 .education-item .text-sm {
   font-size: 0.85rem;
-  color: #6c757d;
+  color: yellow;
 }
 
 /* Specific color themes */
@@ -532,56 +306,6 @@ footer {
 .education-item:last-of-type .icon,
 .education-item:last-of-type h3 {
   color: #9b59b6;
-}
-/* About Section */
-#about {
-  background-color: #f8fafc; /* Light background */
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-#about h2 {
-  color: #007bff; /* Blue for the title */
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-}
-
-#about p {
-  color: #4a5568; /* Soft gray for paragraph */
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-#about span {
-  color: #007bff;
-}
-
-/* Icon Section */
-#about .text-center {
-  text-align: center;
-}
-
-#about .text-center p {
-  color: #4a5568;
-  font-size: 0.875rem;
-}
-
-#about .flex div {
-  width: 33%;
-}
-
-/* Icon Color Classes */
-.coding-icon {
-  color: #1e40af; /* Blue for Software Engineering */
-}
-
-.backend-icon {
-  color: #16a34a; /* Green for Backend Development */
-}
-
-.frontend-icon {
-  color: #06b6d4; /* Cyan for Frontend Development */
 }
 
 /* Footer */

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCode, FaPodcast } from 'react-icons/fa';
+import "./Interests.css"
 
 const Interests = () => (
   <section id="interests">

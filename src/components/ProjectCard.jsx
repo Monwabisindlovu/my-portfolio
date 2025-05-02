@@ -12,7 +12,9 @@ const ProjectCard = ({ title, description, tech, image, liveLink, githubLink }) 
 
   return (
     <div className={`project-card ${projectClass} ${isMeticulous ? 'project-meticulous' : ''}`}>
-      <img src={image} alt={title} className="project-image" />
+      <div className="project-image-wrapper">
+        <img src={image} alt={title} className="project-image" />
+      </div>
       <div className="project-content">
         <h3 className="project-title">{title}</h3>
         <p className="project-description">{description}</p>

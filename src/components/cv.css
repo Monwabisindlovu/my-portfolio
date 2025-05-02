@@ -1,0 +1,135 @@
+/* CV & Cover Letter Section */
+#cv {
+  padding: 80px 20px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 1200px;
+  /* You can also try #1d2327 */
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+.cv-header {
+  font-size: 2.6rem;
+  color: yellow;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cv-subtext {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+/* Cards */
+.cv-card,
+.cover-letter-card {
+  background: #2c3338;
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  animation: slideUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.cv-card:hover,
+.cover-letter-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Icons */
+.cv-icon,
+.cover-letter-icon {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+.cover-letter-icon {
+  color: #8e44ad;
+}
+
+/* Titles */
+.cv-title,
+.cover-letter-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.cv-description,
+.cover-letter-description {
+  font-size: 1rem;
+  color: yellow;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.cv-btn,
+.cover-letter-btn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.cover-letter-btn {
+  background-color: #8e44ad;
+}
+
+.cv-btn:hover {
+  background-color: #163172;
+}
+
+.cover-letter-btn:hover {
+  background-color: #732d91;
+}
+
+/* Animations */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

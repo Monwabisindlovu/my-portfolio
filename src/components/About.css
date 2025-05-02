@@ -1,0 +1,50 @@
+/* About Section */
+#about {
+    background-color: gray 80; /* Light background */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about h2 {
+    color: white; /* Blue for the title */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  #about p {
+    color: white; /* Soft gray for paragraph */
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  #about span {
+    color: #007bff;
+  }
+  
+  /* Icon Section */
+  #about .text-center {
+    text-align: center;
+  }
+  
+  #about .text-center p {
+    color: #4a5568;
+    font-size: 0.875rem;
+  }
+  
+  #about .flex div {
+    width: 33%;
+  }
+  
+  /* Icon Color Classes */
+  .coding-icon {
+    color: #1e40af; /* Blue for Software Engineering */
+  }
+  
+  .backend-icon {
+    color: #16a34a; /* Green for Backend Development */
+  }
+  
+  .frontend-icon {
+    color: #06b6d4; /* Cyan for Frontend Development */
+  }
