@@ -71,13 +71,3 @@
     }
   }
   
-  @media (max-width: 480px) {
-    #interests h2 {
-      font-size: 1.3em;
-    }
-  
-    #interests p,
-    .interest-card p {
-      font-size: 0.95em;
-    }
-  }

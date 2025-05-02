@@ -11,24 +11,17 @@
   color: white;
 }
 
-/* Default grid: works great on big screens */
+/* Grid layout for large screens - evenly spaced */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-  gap: 20px;
+  grid-template-columns: repeat(6, 1fr); /* Adjust this number based on how many skill items you have */
+  gap: 30px;
   justify-items: center;
   align-items: center;
   margin-top: 20px;
 }
 
-/* On small screens, limit to exactly 2 columns */
-@media (max-width: 767px) {
-  .skills-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Style for each skill item */
+/* Skill card */
 .skill {
   background-color: #fff;
   padding: 20px;
@@ -39,8 +32,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 150px; /* Set a fixed height for all skill items */
-  width: 150px;  /* Set a fixed width for all skill items */
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
 }
 
 .skill:hover {
@@ -48,8 +42,8 @@
 }
 
 .skill img {
-  width: 50px;  /* Fixed size for the image */
-  height: 50px; /* Fixed size for the image */
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   margin-bottom: 10px;
 }
@@ -59,4 +53,53 @@
   font-weight: 600;
   color: #333;
   margin-top: 10px;
+}
+
+/* Tablet screens */
+@media (max-width: 992px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Small tablets */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill {
+    max-width: 120px;
+    padding: 15px;
+  }
+
+  .skill img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill {
+    max-width: 100px;
+    padding: 10px;
+  }
+
+  .skill img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .skill p {
+    font-size: 0.9rem;
+  }
 }
